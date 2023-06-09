@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-<p>about page</p>
+<p class="text-center pt-6">about page</p>
 @endsection

@@ -9,9 +9,9 @@
 </head>
 <body>
 
-  <ul>
-    <li><a href={{ route('home') }}>Home</a></li>
-    <li><a href={{ route('about') }}>About</a></li>
+  <ul class="flex justify-center">
+    <li class="my-10"><a class="px-10" href={{ route('home') }}>Home</a></li>
+    <li class="my-10"><a class="px-10" href={{ route('about') }}>About</a></li>
   </ul>
   
   @yield('content')
