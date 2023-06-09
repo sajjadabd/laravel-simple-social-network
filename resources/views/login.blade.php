@@ -5,7 +5,7 @@
 
 <form 
 class="m-2 grid max-w-4xl justify-center bg-sky-100 mx-auto py-12"
-action="/register" 
+action="/login" 
 method="post">
 
   @csrf

@@ -13,6 +13,15 @@ class UserController extends Controller
       return view('login');
     }
 
+    public function login(Request $request) {
+      $inputData = $request->validate([
+        'username' => [ 'required' ] ,
+        'password' => [ 'required' , 'min:8' ] ,
+      ]);
+
+      return $inputData['username'] . " logined successfully ";
+    }
+
     public function registerationPage(Request $request) {
       return view('register');
     }
