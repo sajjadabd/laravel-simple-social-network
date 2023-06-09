@@ -11,6 +11,8 @@
 
   <ul class="flex justify-center">
     <li class="my-10"><a class="px-10" href={{ route('home') }}>Home</a></li>
+    <li class="my-10"><a class="px-10" href={{ route('registerationPage') }}>Register</a></li>
+    <li class="my-10"><a class="px-10" href={{ route('loginPage') }}>Login</a></li>
     <li class="my-10"><a class="px-10" href={{ route('about') }}>About</a></li>
   </ul>
   

@@ -8,6 +8,15 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
+
+    public function loginPage(Request $request) {
+      return view('login');
+    }
+
+    public function registerationPage(Request $request) {
+      return view('register');
+    }
+    
     public function register(Request $request){
       
       $inputData = $request->validate([
@@ -23,5 +32,6 @@ class UserController extends Controller
       ]);
 
       return $inputData['username'] . " registered successfully with email " . $inputData['email'] . " and password " . $inputData['password'];
+
     }
 }

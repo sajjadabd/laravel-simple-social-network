@@ -20,4 +20,6 @@ use App\Http\Controllers\UserController;
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 
+Route::get('/login', [UserController::class, 'loginPage'])->name('loginPage');
+Route::get('/register', [UserController::class, 'registerationPage'])->name('registerationPage');
 Route::post('/register', [UserController::class, 'register'])->name('register');
