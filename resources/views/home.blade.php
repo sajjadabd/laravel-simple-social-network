@@ -23,6 +23,12 @@
     <span>{{$message}}</span>
   @enderror
   <br />
+  <label>Password Confirmation : </label>
+  <input id="password_confirmation" name="password_confirmation" />
+  @error('password_confirmation')
+    <span>{{$message}}</span>
+  @enderror
+  <br />
   <button>Register</button>
 </form>
 
