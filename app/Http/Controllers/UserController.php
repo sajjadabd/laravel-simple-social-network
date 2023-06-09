@@ -19,7 +19,13 @@ class UserController extends Controller
         'password' => [ 'required' , 'min:8' ] ,
       ]);
 
-      return $inputData['username'] . " logined successfully ";
+      if( auth()->attempt(['username' => $inputData['username'] , 'password' => $inputData['password'] ]) ) {
+        return $inputData['username'] . " logined successfully ";
+      } else {
+        return "Incorrect information!";
+      }
+
+      
     }
 
     public function registerationPage(Request $request) {
